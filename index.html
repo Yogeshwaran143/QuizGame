@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Word Quiz Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+        <meta name="viewport" content="width-device-width initial-scale=1.0">
+    </head>
+    <body>
+        <div class="game_container center">
+            <div class="game_display_container center" id="first_page">
+                <h1>Quiz Game</h1>
+                <button onclick="startGame()" id="start_game">New Game</button>
+                <button>Quit Game</button>
+            </div>
+            <div class="game_display_level1 center" id="second_page">
+                <div class="game_display_level1_title">
+                    <h2>Word Quiz Game</h2>
+                </div>
+                <div class="game_display_level1_level" id="levels"></div>
+                <div class="game_display_level1_question" id="question"></div>
+                <div class="game_display_level1_images">
+                    <div id="images" class="center image1"></div>
+                </div>
+                <div class="game_display_level1_form">
+                    <form action="" class="form_div">
+                        <input type="text" placeholder="Enter the answer">
+                        <button>Submit</button>
+                        <button id="next_image" onclick="goImage()">Next Image</button>
+                    </form>
+                </div>
+            </div>
+            <div class="game_result_container center">
+                <h1>You won the Game</h1>
+                <button>Play Again!</button>
+            </div>
+        </div>
+    </body>
+</html>

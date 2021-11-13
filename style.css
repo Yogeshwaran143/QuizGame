@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('quizCover.png');
+    background-size: cover;
+}
+
+
+.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.game_display_container{
+    height: 450px;
+    width: 700px;
+    border-radius: 15px;
+    display: flex;
+    background-image: url('gameCover.jpg');
+    background-size: cover;
+}
+
+.game_display_container h1 {
+    border: white 1px solid;
+    border-right: solid 15px white;
+    border-left: solid 15px white;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.game_display_container button {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.game_display_container button:hover {
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
+
+.game_display_level1{
+    height: 500px;
+    width: 800px;
+    border-radius: 15px;
+    display: none;
+    background-image: url('quizBackground.jpg');
+    background-size: cover;
+}
+
+.game_display_level1_title {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 800px;
+    display: flex;
+    position:absolute;
+    top: 84px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: navy;
+}
+
+.game_display_level1_title h2 {
+    color: white;
+}
+
+.game_display_level1_question, .game_display_level1_level {
+    height: 50px;
+    width: 800px;
+    display: flex;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.game_display_level1_level {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px white;
+}
+
+.game_display_level1_question {
+    margin-left: 50px;
+}
+
+.game_display_level1_images {
+    height: 200px;
+    width: 700px;
+    display: flex;
+    background-color: white;
+}
+
+.game_display_level1_form {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 800px;
+    display: flex;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.form_div input{
+    height: 35px;
+    width: 240px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form_div button{
+    margin-left: 40px;
+    height: 30px;
+    width: 90px;
+    color: white;
+    background-color: navy;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form_div button:hover {
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px 5px white;
+}
+
+.image1 img {
+    margin: 40px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+}
+
+.image1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.game_result_container{
+    height: 450px;
+    width: 700px;
+    border-radius: 15px;
+    display: none;
+    background-image: url('gameCover.jpg');
+    background-size: cover;
+}
+
+.game_result_container h1 {
+    border: white 1px solid;
+    border-right: solid 15px white;
+    border-left: solid 15px white;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.game_result_container button {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.game_result_container button:hover {
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
