@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('game.jpeg');
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_intro {
+    width: 100vw;
+    height: 100vh;
+}
+
+.game_intro1 {
+    height: 450px;
+    width: 700px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: white;
+    background-image: url('intro.jpeg');
+}
+
+.game_intro1 h1 {
+    margin-top: -100px;
+    border: black 1px solid;
+    border-right: solid 15px black;
+    border-left: solid 15px black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.game_intro1 a {
+    margin: 15px;
+    font-size: 25px;
+}
+
+.game_intro1 a:hover {
+    transform: scale(1.5);
+}
+
+.Atext3D {
+    color: #f4f6f8;
+    letter-spacing: 0.15em;
+    text-shadow: 
+      -1px -1px 1px #efede3,
+      2px 20px 5px rgba(0, 0, 0, 0.9),
+      5px 23px 5px rgba(0, 0, 0, 0.3),
+      8px 27px 8px rgba(0, 0, 0, 0.5),
+      8px 28px 35px rgba(0, 0, 0, 0.9);
+}
+
+.text3D {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.text3D1 {
+    top: 50%; 
+    color: #f5f5f5;
+    font-size: 4em;
+}
+
+.text3D2 {
+    top: 12%;
+    color: #0e0d0d;
+    font-size: 3em;
+}
+
+.game_zone {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gaming_zone1 {
+    height: 550px;
+    width: 800px;
+    margin-top: 50px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: white;
+    background-image: url('zone.jpeg');
+}
+
+.game_zone_title {
+    height: 60px;
+    width: 800px;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url('title.jpg');
+}
+
+.game_zone_level {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-shadow: 2px 2px 5px white;
+}
+
+.game_zone_question {
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 50px;
+    color: white;
+}
+
+.game_zone_imageLimit{
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.game_zone_image {
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 200px;
+    width: 700px;
+    display: flex;
+    background-color: white;
+}
+
+.game_zone_image1 img {
+    margin: 40px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+}
+
+.game_zone_image1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.form_div {
+    margin-top: 50px;
+}
+
+.form_div input{
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form_div button{
+    margin-left: 40px;
+    height: 30px;
+    width: 90px;
+    color: white;
+    background-color: navy;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form_div button:hover {
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px 5px white;
+}
+
+.game_result {
+    width: 100vw;
+    height: 100vh;
+}
+
+.game_result1 {
+    height: 450px;
+    width: 700px;
+    border-radius: 15px;
+    flex-direction: column;
+    background-image: url('gameover.jpg');
+    background-size: cover;
+}
+
+.game_result_show {
+    width: 600px;
+    height: 300px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game_result_playAgain {
+    margin: 13px;
+    color: black;
+}
+
+.game_result_show a:hover {
+    font-weight: 1000;
+    transform: scale(1.5);
+}
+
+@media only screen and (max-width:768px) {
+
+    .game_intro {
+      height: 100%;
+      width: 100%;
+    }
+
+    .game_intro1 {
+        height: 500px;
+        width: 300px;
+        border-radius: 15px;
+        flex-direction: column;
+        background-color: white;
+        background-image: url('intro.jpeg');
+    }
+    
+    .game_intro1 a {
+        margin: 15px;
+        font-size: 25px;
+    }
+    
+    .text3D1 {
+        top: 50%;
+        color: #f5f5f5;
+        font-size: 2em;
+    }
+
+    .game_zone {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .gaming_zone1 {
+        height: 1000px;
+        width: 400px;
+        border-radius: 15px;
+        flex-direction: column;
+        background-color: white;
+        background-image: url('zone.jpeg');
+    }
+    
+    .game_zone_title {
+        height: 60px;
+        width: 400px;
+        border-radius: 15px 15px 0px 0px;
+        background-image: url('title.jpg');
+        font-size: 11px;
+    }
+    
+    .game_zone_image {
+        height: 700px;
+        width: 300px;
+        flex-direction: column;
+        background-color: white;
+    }
+    
+    .game_zone_image1 img {
+        margin: 40px;
+        background-color: black;
+        height: 150px;
+        width: 150px;
+    }
+    
+    .game_zone_image1 {
+        flex-direction: column;
+    }
+
+    .game_result {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .game_result1 {
+        height: 500px;
+        width: 300px;
+        border-radius: 15px;
+        flex-direction: column;
+        background-image: url('gameover.jpg');
+        background-size: cover;
+    }
+    
+    .game_result_show {
+        width: 300px;
+        height: 300px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        color: #0e0d0d;
+    }
+    
+    .game_result_playAgain {
+        margin: 13px;
+        color: black;
+    }
+}

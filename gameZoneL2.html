@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Game Zone L2</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="Levels('Level 2', 'Guess what is the programming language name ?')">
+        <div class="gaming_zone center">
+            <div class="gaming_zone1">
+                <div class="game_zone_title center">
+                    <h1 class="text3D text3D2">Quiz Game</h1>
+                </div>
+                <div class="game_zone_level" id="levels"></div>
+                <div class="game_zone_question" id="questions"></div>
+                <div class="game_zone_image center">
+                    <div class="game_zone_image1" id="images"></div>
+                </div>
+                <div class="game_zone_imageLimit center" id="image_limit"></div>
+                <form action="" class="center form_div" onsubmit="return false">
+                    <input type="text" placeholder="Enter the answer" id="answer">
+                    <button onclick="checkAnswer()">Submit</button>
+                    <button onclick="nextImage()" id="next_image">Next Image</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
